@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/nakulpathak3/blorgh-engine-gem.git
+  revision: fd5e2d50e403f3df612e19f558dd45d810f55d9e
+  branch: without_user
+  specs:
+    blorgh (0.0.1)
+      rails (~> 4.2.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -148,6 +156,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  blorgh!
   coderay
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
