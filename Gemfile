@@ -15,7 +15,7 @@ gem 'redcarpet'
 gem 'coderay'
 
 #Blog
-gem 'blorgh', github: 'nakulpathak3/blorgh-engine-gem', branch: 'without_user'
+gem 'blorgh', path: "~/personal-blog-gem"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

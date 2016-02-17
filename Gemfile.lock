@@ -1,10 +1,8 @@
-GIT
-  remote: git://github.com/nakulpathak3/blorgh-engine-gem.git
-  revision: fd5e2d50e403f3df612e19f558dd45d810f55d9e
-  branch: without_user
+PATH
+  remote: ~/personal-blog-gem
   specs:
     blorgh (0.0.1)
-      rails (~> 4.2.2)
+      rails (~> 4.2.5.1)
 
 GEM
   remote: https://rubygems.org/
