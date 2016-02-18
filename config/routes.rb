@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root 'home#index'
-  mount Blorgh::Engine, at: '/blog', as: 'blog'
+  mount PersonalBlog::Engine, at: "/blog"
 end
