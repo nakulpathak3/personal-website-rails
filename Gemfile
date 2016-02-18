@@ -14,8 +14,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'redcarpet'
 gem 'coderay'
 
-#Blog
-gem 'blorgh', path: "~/personal-blog-gem"
+gem 'personal_blog', path: "~/personal_blog"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

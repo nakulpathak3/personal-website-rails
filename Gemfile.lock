@@ -1,7 +1,7 @@
 PATH
-  remote: ~/personal-blog-gem
+  remote: ~/personal_blog
   specs:
-    blorgh (0.0.1)
+    personal_blog (0.0.1)
       rails (~> 4.2.5.1)
 
 GEM
@@ -154,11 +154,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  blorgh!
   coderay
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  personal_blog!
   pg
   pry
   rails (= 4.2.5.1)
