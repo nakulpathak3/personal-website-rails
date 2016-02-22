@@ -11,37 +11,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160218013424) do
+ActiveRecord::Schema.define(version: 20160222172018) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "blorgh_articles", force: :cascade do |t|
-    t.string   "title"
+  create_table "personal_blog_comments", force: :cascade do |t|
+    t.integer  "post_id"
     t.text     "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "blorgh_comments", force: :cascade do |t|
-    t.integer  "article_id"
-    t.text     "text"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "personal_blog_articles", force: :cascade do |t|
+  create_table "personal_blog_posts", force: :cascade do |t|
     t.string   "title"
     t.text     "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "personal_blog_comments", force: :cascade do |t|
-    t.integer  "article_id"
-    t.text     "text"
+  create_table "personal_blog_taggings", force: :cascade do |t|
+    t.integer "post_id", null: false
+    t.integer "tag_id",  null: false
+  end
+
+  add_index "personal_blog_taggings", ["tag_id", "post_id"], name: "index_personal_blog_taggings_on_tag_id_and_post_id", unique: true, using: :btree
+
+  create_table "personal_blog_tags", force: :cascade do |t|
+    t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "personal_blog_taggings", "personal_blog_posts", column: "post_id"
+  add_foreign_key "personal_blog_taggings", "personal_blog_tags", column: "tag_id"
 end
