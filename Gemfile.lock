@@ -154,7 +154,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  coderay
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
@@ -162,7 +161,6 @@ DEPENDENCIES
   pg
   pry
   rails (= 4.2.5.1)
-  redcarpet
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
