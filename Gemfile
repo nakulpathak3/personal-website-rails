@@ -8,7 +8,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+gem 'bootstrap-sass'
 gem 'personal_blog', path: "~/personal_blog"
 
 group :development, :test do
