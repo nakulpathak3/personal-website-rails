@@ -2,7 +2,6 @@ PATH
   remote: ~/personal_blog
   specs:
     personal_blog (0.0.1)
-      coderay (~> 1.1.0)
       rails (~> 4.2)
       redcarpet (~> 3.3.4)
 
